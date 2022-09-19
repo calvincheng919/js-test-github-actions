@@ -12,8 +12,8 @@ jobs:
     name: "Unit tests"
     runs-on: ubuntu-latest
     steps:
-      uses: mattallty/jest-github-action@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
-      with:
-        working-directory: "frontend"
+      - uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+        with:
+          working-directory: "frontend"
